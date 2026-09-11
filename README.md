@@ -10,7 +10,7 @@ An undetectable Windows macro recorder and player equipped with humanized moveme
 
 [![Download Standalone Executable](https://img.shields.io/badge/Download-antibotmacro.exe%20(37.4MB)-2563eb?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io/releases/download/v1.0.0/antibotmacro.exe)
 [![Download Python Script](https://img.shields.io/badge/Download-macro__recorder.py-334155?style=for-the-badge&logo=python&logoColor=white)](https://YOUR_USERNAME.github.io/macro_recorder.py)
-[![Visit Website](https://img.shields.io/badge/Website-Live%20Demo-38bdf8?style=for-the-badge&logo=githubpages&logoColor=black)](https://YOUR_USERNAME.github.io)
+[![Visit Website](https://img.shields.io/badge/Website-Live%20Demo-38bdf8?style=for-the-badge&logo=githubpages&logoColor=black)](https://advik1710.github.io)
 
 ---
 
