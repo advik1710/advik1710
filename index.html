@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Bot Macro Automator</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background-color: #0f172a; 
+            color: #f8fafc; 
+            text-align: center; 
+            padding: 40px 20px; 
+            margin: 0;
+        }
+        .container { max-width: 650px; margin: 0 auto; }
+        h1 { color: #38bdf8; font-size: 2.2rem; margin-bottom: 10px; }
+        .tagline { color: #94a3b8; font-size: 1.1rem; margin-bottom: 30px; }
+        .card { 
+            background: #1e293b; 
+            border: 1px solid #334155;
+            border-radius: 12px; 
+            padding: 25px; 
+            margin: 20px 0; 
+            text-align: left; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+        }
+        h2 { color: #f1f5f9; margin-top: 0; }
+        p { color: #cbd5e1; line-height: 1.5; }
+        .btn { 
+            display: inline-block; 
+            padding: 12px 24px; 
+            color: #ffffff; 
+            background-color: #2563eb; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: 600; 
+            margin-top: 10px; 
+            transition: background 0.2s;
+        }
+        .btn:hover { background-color: #1d4ed8; }
+        .btn-secondary { background-color: #475569; }
+        .btn-secondary:hover { background-color: #334155; }
+        code { 
+            background: #0f172a; 
+            padding: 10px 14px; 
+            border-radius: 6px; 
+            color: #38bdf8; 
+            display: block; 
+            margin-top: 10px; 
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Anti-Bot Macro Automator</h1>
+        <p class="tagline">Humanized Windows automation featuring Bezier curve mouse paths and dynamic click timing.</p>
+
+        <!-- Executable Option -->
+        <div class="card">
+            <h2>📦 Windows Standalone App (.exe)</h2>
+            <p><strong>No setup required.</strong> Run directly on Windows without installing Python or dependencies.</p>
+            
+            <!-- Replace YOUR_GITHUB_USERNAME below -->
+            <a href="https://github.com/advik1710/advik1710.github.io/releases/download/v1.0.0/antibotmacro.exe" class="btn">
+                Download antibotmacro.exe (37.4 MB)
+            </a>
+        </div>
+
+        <!-- Python Source Option -->
+        <div class="card">
+            <h2>🐍 Python Source Code (.py)</h2>
+            <p>For custom modification or running directly via Python.</p>
+            
+            <a href="macro_recorder.py" class="btn btn-secondary" download>
+                Download macro_recorder.py
+            </a>
+
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #94a3b8;"><strong>Manual Installation Command:</strong></p>
+            <code>pip install PyQt5 pynput pywin32</code>
+        </div>
+    </div>
+
+</body>
+</html>
