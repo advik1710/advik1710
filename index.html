@@ -12,9 +12,10 @@
             text-align: center; 
             padding: 40px 20px; 
             margin: 0;
+            overflow-x: hidden;
         }
         .container { max-width: 650px; margin: 0 auto; }
-        h1 { color: #38bdf8; font-size: 2.2rem; margin-bottom: 10px; }
+        h1 { color: #38bdf8; font-size: 2.2rem; margin-bottom: 10px; transition: transform 0.3s ease; }
         .tagline { color: #94a3b8; font-size: 1.1rem; margin-bottom: 30px; }
         .card { 
             background: #1e293b; 
@@ -24,6 +25,8 @@
             margin: 20px 0; 
             text-align: left; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.3); 
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: default;
         }
         h2 { color: #f1f5f9; margin-top: 0; }
         p { color: #cbd5e1; line-height: 1.5; }
@@ -36,11 +39,23 @@
             border-radius: 8px; 
             font-weight: 600; 
             margin-top: 10px; 
-            transition: background 0.2s;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
         }
-        .btn:hover { background-color: #1d4ed8; }
+        .btn:hover { 
+            background-color: #1d4ed8; 
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+        .btn:active {
+            transform: translateY(1px);
+        }
         .btn-secondary { background-color: #475569; }
-        .btn-secondary:hover { background-color: #334155; }
+        .btn-secondary:hover { 
+            background-color: #334155; 
+            box-shadow: 0 6px 20px rgba(71, 85, 105, 0.4);
+        }
         code { 
             background: #0f172a; 
             padding: 10px 14px; 
@@ -50,22 +65,26 @@
             margin-top: 10px; 
             font-family: monospace;
             font-size: 0.95rem;
+            border: 1px solid #1e293b;
+            transition: border-color 0.3s ease;
+        }
+        code:hover {
+            border-color: #38bdf8;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Anti-Bot Macro Automator</h1>
-        <p class="tagline">Humanized Windows automation featuring Bezier curve mouse paths and dynamic click timing.</p>
+        <h1 id="main-title">Anti-Bot Macro Automator 🌹</h1>
+        <p class="tagline">Humanized Windows automation featuring Bézier curve paths, dynamic click variance, and typo simulation.</p>
 
         <!-- Executable Option -->
         <div class="card">
             <h2>📦 Windows Standalone App (.exe)</h2>
-            <p><strong>No setup required.</strong> Run directly on Windows without installing Python or dependencies.</p>
+            <p><strong>No setup required.</strong> Run directly on Windows without installing Python or external libraries.</p>
             
-            <!-- Replace YOUR_GITHUB_USERNAME below -->
-            <a href="https://github.com/advik1710/advik1710.github.io/releases/download/v1.0.0/antibotmacro.exe" class="btn">
+            <a href="https://github.com/advik1710/advik1710/releases/download/beta/antibotmacro.exe" class="btn pulse-btn">
                 Download antibotmacro.exe (37.4 MB)
             </a>
         </div>
@@ -73,16 +92,18 @@
         <!-- Python Source Option -->
         <div class="card">
             <h2>🐍 Python Source Code (.py)</h2>
-            <p>For custom modification or running directly via Python.</p>
+            <p>For custom modifications or execution straight via Python.</p>
             
-            <a href="macro_recorder.py" class="btn btn-secondary" download>
+            <a href="https://raw.githubusercontent.com/advik1710/advik1710/main/macro_recorder.py" class="btn btn-secondary" download="macro_recorder.py">
                 Download macro_recorder.py
             </a>
 
-            <p style="margin-top: 20px; font-size: 0.9rem; color: #94a3b8;"><strong>Manual Installation Command:</strong></p>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #94a3b8;"><strong>Manual Dependencies Installation:</strong></p>
             <code>pip install PyQt5 pynput pywin32</code>
         </div>
     </div>
 
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
